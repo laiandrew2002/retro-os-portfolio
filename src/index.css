@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-retro: "Tahoma", "MS Sans Serif", "Segoe UI", sans-serif;
+  --font-mono: "Courier New", "Courier", monospace;
+  --color-win-bg: #008080;
+  --color-win-surface: #c0c0c0;
+  --color-win-shadow: #dfdfdf;
+  --color-win-dark: #808080;
+  --color-win-darker: #404040;
+  --color-win-blue: #000080;
+  --color-win-blue-light: #1084d0;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-win-bg);
+    color: black;
+    font-family: var(--font-retro);
+    overflow: hidden;
+    user-select: none;
+  }
+}
+
+/* Classic Win95/2000 border mixin basically */
+.win-border {
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid var(--color-win-dark);
+  border-bottom: 2px solid var(--color-win-dark);
+  box-shadow: inset -1px -1px 0px 0px var(--color-win-darker), inset 1px 1px 0px 0px var(--color-win-shadow);
+}
+
+.win-border-inset {
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  border-top: 2px solid var(--color-win-dark);
+  border-left: 2px solid var(--color-win-dark);
+  box-shadow: inset 1px 1px 0px 0px var(--color-win-darker), inset -1px -1px 0px 0px var(--color-win-shadow);
+}
+
+.win-btn {
+  background: var(--color-win-surface);
+  border-top: 1.5px solid white;
+  border-left: 1.5px solid white;
+  border-right: 1.5px solid var(--color-win-dark);
+  border-bottom: 1.5px solid var(--color-win-dark);
+  box-shadow: inset -1px -1px 0px 0px var(--color-win-darker), inset 1px 1px 0px 0px var(--color-win-shadow);
+}
+
+.win-btn:active, .win-btn-active {
+  border-bottom: 1.5px solid white;
+  border-right: 1.5px solid white;
+  border-top: 1.5px solid var(--color-win-dark);
+  border-left: 1.5px solid var(--color-win-dark);
+  box-shadow: inset 1px 1px 0px 0px var(--color-win-darker), inset -1px -1px 0px 0px var(--color-win-shadow);
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+.win-scrollbar::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: var(--color-win-surface);
+  border-left: 1px solid var(--color-win-dark);
+}
+
+.win-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-win-surface);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid var(--color-win-dark);
+  border-bottom: 1px solid var(--color-win-dark);
+}
+
+.win-scrollbar::-webkit-scrollbar-button:single-button {
+  background-color: var(--color-win-surface);
+  display: block;
+  height: 16px;
+  width: 16px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid var(--color-win-dark);
+  border-bottom: 1px solid var(--color-win-dark);
+}

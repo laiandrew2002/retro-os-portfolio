@@ -1,0 +1,8 @@
+{
+  "name": "Win2k Engineer Portfolio",
+  "description": "A highly interactive frontend portfolio web application inspired by the classic Windows 2000 desktop operating system aesthetic. Includes simulated desktop UI, Start Menu, draggable windows, and classic programs like Paint and Winamp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
