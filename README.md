@@ -1,20 +1,47 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Retro OS Portfolio
 
-# Run and deploy your AI Studio app
+A personal portfolio site styled like **Windows 2000**. Double-click desktop icons to open draggable windows for experience, projects, skills, and more.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/1682fb09-cfa5-481d-bd98-92e4b09c68a6
+- Boot screen and classic desktop with taskbar
+- **My Computer** — profile and contact details
+- **Experience.doc** — work history
+- **Projects** — featured projects
+- **Skills.exe** — technical skills
+- **Command Prompt** — interactive terminal (`help`, `whoami`, `skills`, etc.)
+- **Internet Explorer**, **Paint**, **Media Player**, and **Recycle Bin**
 
-## Run Locally
+Portfolio content lives in [`src/data/portfolio.ts`](src/data/portfolio.ts).
 
-**Prerequisites:**  Node.js
+## Tech stack
 
+React · TypeScript · Vite · Tailwind CSS · Zustand · Motion
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting started
+
+**Prerequisites:** [Node.js](https://nodejs.org/) 18+
+
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start dev server |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Type-check |
+
+## Customize
+
+Edit [`src/data/portfolio.ts`](src/data/portfolio.ts) with your name, experience, projects, and skills. Update terminal commands in [`src/components/apps/Terminal.tsx`](src/components/apps/Terminal.tsx) if needed.
+
+## License
+
+Personal portfolio — use as inspiration; update content for your own site.
